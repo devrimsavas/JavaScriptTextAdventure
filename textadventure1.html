@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel='stylesheet' href="textadventure.css">
+    <title> Text Adventure Game </title>
+</head>
+<header>
+    <pre id="ascii">
+        ███████╗███████╗ ██████╗██████╗ ███████╗████████╗     ██████╗ ███████╗    ███████╗ ██████╗ ██╗   ██╗██████╗     ██████╗  ██████╗  ██████╗ ███╗   ███╗███████╗    
+        ██╔════╝██╔════╝██╔════╝██╔══██╗██╔════╝╚══██╔══╝    ██╔═══██╗██╔════╝    ██╔════╝██╔═══██╗██║   ██║██╔══██╗    ██╔══██╗██╔═══██╗██╔═══██╗████╗ ████║██╔════╝    
+        ███████╗█████╗  ██║     ██████╔╝█████╗     ██║       ██║   ██║█████╗      █████╗  ██║   ██║██║   ██║██████╔╝    ██████╔╝██║   ██║██║   ██║██╔████╔██║███████╗    
+        ╚════██║██╔══╝  ██║     ██╔══██╗██╔══╝     ██║       ██║   ██║██╔══╝      ██╔══╝  ██║   ██║██║   ██║██╔══██╗    ██╔══██╗██║   ██║██║   ██║██║╚██╔╝██║╚════██║    
+        ███████║███████╗╚██████╗██║  ██║███████╗   ██║       ╚██████╔╝██║         ██║     ╚██████╔╝╚██████╔╝██║  ██║    ██║  ██║╚██████╔╝╚██████╔╝██║ ╚═╝ ██║███████║    
+        ╚══════╝╚══════╝ ╚═════╝╚═╝  ╚═╝╚══════╝   ╚═╝        ╚═════╝ ╚═╝         ╚═╝      ╚═════╝  ╚═════╝ ╚═╝  ╚═╝    ╚═╝  ╚═╝ ╚═════╝  ╚═════╝ ╚═╝     ╚═╝╚══════╝    
+                                                                                                                                                                         
+    </pre>
+
+
+
+
+</header>
+<body>
+<section >
+    <h1 class="growText"> </h1> <br>
+    <button type="button" id="startGame" onclick="gamePlay()" class="button"> START NEW GAME </button><br><br>
+    <div style="display: inline-block;">
+        <textarea rows="15" cols="70" id="displayer" style="vertical-align: top;" readonly></textarea>
+        <div style="display: inline-block; vertical-align: top;">
+            <fieldset style="width:300px; height:100px; display: block;">
+                <legend> Location </legend>
+                <p id="dispLocal"> </p>
+            </fieldset>
+            <fieldset  style="width:300px; height:400px; display: block;">
+                <legend> Inventory </legend>
+                <p id="showinventory" style="font-style: oblique;"> </p>
+                
+            </fieldset>
+            <button class="button" id="startgamebutton" style="margin-top:10px ;" onclick="displayInventory()"> Show Inventory </button>
+        </div>
+        <fieldset rows="30" cols="100" id="commands" style="vertical-align: top;" readonly>
+            <legend> Commands </legend>
+            <p id="commands"> <strong> <span style="color:rgb(75, 42, 165)"> north,east,south,west </span>look around, tell place, show inventory, clear </strong> </p>
+        </fieldset>
+    </div><br>
+    
+    <label for="command"> Your Command ? </label><br>
+    <div style="display:flex;align-items:center;">
+        <input type="text" name="command" id="command" style="width:530px;height:30px;">
+        <button type="button" class="button" id="enterCommand" onclick="movePlayer()"> ENTER COMMAND </button>
+    </div>
+</section>
+<script src="textAdventure1.js"></script>
+</body>
+</html>

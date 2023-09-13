@@ -1,0 +1,179 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+#ascii {
+    font-size:12px;
+    text-decoration:underline red double 1px;
+    animation: asciiAnime 6s infinite alternate;
+    
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #8d8d86;
+    color: #f3f3f3;
+    line-height: 1.6;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    box-shadow: 10px 10px 5px 0px rgba(2, 2, 2, 0.75);
+
+
+}
+
+/* Adding some spacing around the entire page */
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Styling the header */
+header {
+    background: #393a3b;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    box-shadow:10px 10px 5px 0px rgba(2, 2, 2, 0.75);
+    border-radius:5px;
+}
+
+
+
+/* Basic styling for different sections */
+section {
+    padding: 20px;
+    /*margin: 200px 200px;*/
+    background: #31b3ad;
+    border-radius: 15px;
+    width:1200px;
+    box-sizing:border-box;
+    
+}
+
+/* Styling for paragraphs */
+p {
+    margin-bottom: 20px;
+}
+
+/* Styling for all the headings */
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 10px;
+    text-align:left;
+}
+
+/* Styling for buttons */
+.button {
+    background: #65696d;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left:5px;
+}
+
+.button:hover {
+    background: #0056a3;
+}
+
+/* Styling for footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #282c34;
+    color: #ebeae4;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+textarea {
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.953);
+    color: rgb(6, 208, 30);
+    font-size: 20px;
+    border-radius: 10px;
+    scroll-behavior: auto;
+    resize: none;
+    width: 800px; 
+    height: 600px; 
+}
+
+#inventoryset {
+    position:absolute;
+    top:150px;
+    left:950px;
+    /*background-color:darkblue; */
+    font-size:14px;
+    border-radius:10px;
+    width:10px;
+    height:10px;
+
+}
+
+
+input {border-radius:5px;
+       font-size:15px;
+        }
+
+fieldset {
+         border-radius:15px;
+         margin-left:15px;
+}
+
+
+@keyframes textGrow {
+    0% {
+        
+        font-size: 33px;
+        color: #ffffff;
+
+        
+        transform: rotate(0deg);
+        text-align:center;
+        
+        
+    }
+    100% {
+        font-size:33px;
+        color: rgb(109, 181, 54);
+        text-align:center;
+        text-shadow: 3px 3px 3px green;
+        /*transform:rotate(360deg);*/
+        
+        
+    }
+}
+
+@keyframes asciiAnime {
+    0% {
+        color:#0056a3;
+    }
+
+    100% {
+        color:chartreuse;
+    }
+}
+
+
+
+
+
+
+.growText {
+    animation: textGrow 2s infinite alternate;
+    
+}
+
+
